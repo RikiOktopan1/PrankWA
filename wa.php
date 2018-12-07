@@ -1,6 +1,6 @@
 <?php
-echo "COPYRIGHT : SGB TEAM\n\n";
-echo "Nomor Target?\nInput : ";
+echo "Riki Oktopan\n\n";
+echo "Nomor Target :\nInput : ";
 $nomer = trim(fgets(STDIN));
 if(strlen($nomer)==11){
 	$nomer = str_replace("0","62".$nomer);
@@ -10,7 +10,7 @@ if(strlen($nomer)==11){
 echo "Target: $nomer (y/n)";
 $cek = trim(fgets(STDIN));
 if($cek=="n") exit("Stopped!\n");
-echo "Jumlah?\nInput : ";
+echo "Jumlah Pesan:\nInput : ";
 $jumlah = trim(fgets(STDIN));
 for($a=0;$a<$jumlah;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
